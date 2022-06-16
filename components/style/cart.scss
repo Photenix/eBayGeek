@@ -1,0 +1,27 @@
+.cart-shop{
+    padding: 20px 10% 40px;
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
+
+#product{
+    background-color: white;
+}
+
+.product{
+    background-color: white;
+}
+
+
+.delet{
+    background-color: rgb(245, 40, 40);
+    border-radius: 5%;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(143, 11, 11);
+    }
+}

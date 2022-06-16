@@ -1,0 +1,29 @@
+.cart-shop {
+  padding: 20px 10% 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+#product {
+  background-color: white;
+}
+
+.product {
+  background-color: white;
+}
+
+.delet {
+  background-color: #f52828;
+  border-radius: 5%;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+.delet:hover {
+  background-color: #8f0b0b;
+}
+/*# sourceMappingURL=cart.css.map */

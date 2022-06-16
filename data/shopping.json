@@ -1,0 +1,160 @@
+{
+  "clothing": [
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    }
+  ],
+  "other": [
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150
+    }
+  ],
+  "categories": [
+    {
+      "image": "./img/4.jpeg",
+      "category": "Arte"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Bebes"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Libros"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Fotos"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Coleccionables"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Electrodomesticos"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Craft"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Coches"
+    },
+    {
+      "image": "./img/4.jpeg",
+      "category": "Otros"
+    }
+  ],
+  "cart": [
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150,
+      "id": 4
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150,
+      "id": 4
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150,
+      "id": 4
+    },
+    {
+      "image": "./img/4.jpeg",
+      "description": "NO TENGO TIEMPO",
+      "price": 150,
+      "id": 4
+    }
+  ]
+}
