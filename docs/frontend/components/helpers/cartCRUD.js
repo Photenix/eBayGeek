@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/cart"
+const url = "https://app-ninja-espacial-del-espacio.herokuapp.com/cart"
 
 const getCart = async() => {
     const data = await fetch(url)
@@ -14,6 +14,7 @@ const deletCart = async(id) => {
 
 const postCart = async(json) =>{
     try{
+        console.log(JSON.stringify( json ))
         await fetch(url,{
             method: 'POST',
             body: JSON.stringify( json ),

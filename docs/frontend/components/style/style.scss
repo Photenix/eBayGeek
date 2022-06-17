@@ -91,6 +91,7 @@ header{
         object-fit: scale-down;
         border-radius: 50%;
         margin-bottom: 8px;
+        transition: 0.5s;
     }
     img:hover{
         height: 160px;

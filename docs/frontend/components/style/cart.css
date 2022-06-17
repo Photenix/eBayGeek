@@ -1,9 +1,7 @@
 .cart-shop {
   padding: 20px 10% 40px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
 }
 
@@ -16,14 +14,12 @@
 }
 
 .delet {
-  background-color: #f52828;
+  background-color: rgb(245, 40, 40);
   border-radius: 5%;
   border: none;
   height: 40px;
   cursor: pointer;
 }
-
 .delet:hover {
-  background-color: #8f0b0b;
-}
-/*# sourceMappingURL=cart.css.map */
+  background-color: rgb(143, 11, 11);
+}/*# sourceMappingURL=cart.css.map */

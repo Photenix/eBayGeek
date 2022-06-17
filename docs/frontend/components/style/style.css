@@ -1,0 +1,147 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+:root {
+  --grid-p: rgb(175, 175, 175);
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(47, 47, 225);
+  padding: 12px 40px;
+}
+header img {
+  color: white;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.category button {
+  border: none;
+  font-size: 20px;
+  background-color: white;
+  padding: 12px 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.category button:hover {
+  background-color: var(--grid-p);
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items:  center;*/
+  margin-left: 8%;
+  max-width: 1000px;
+  margin-bottom: 40px;
+}
+.container .popular-products {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.container .popular-products img {
+  height: 340px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 5%;
+}
+.container .shop-category {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.container .shop-category-letter {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.container .shop-category-image {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.card-circle img {
+  height: 150px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  transition: 0.5s;
+}
+.card-circle img:hover {
+  height: 160px;
+}
+
+.card-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 150px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+.card-square:hover {
+  background-color: rgba(134, 134, 134, 0.386);
+}
+.card-square img {
+  width: 150px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 5%;
+  margin-bottom: 8px;
+}
+.card-square .description {
+  font-size: 16px;
+}
+.card-square .money {
+  color: blue;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.title-subtitle {
+  margin-bottom: 12px;
+}
+.title-subtitle p {
+  color: var(--grid-p);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.row .puntero {
+  transform: rotate(-90deg);
+}
+.row a {
+  color: rgb(106, 71, 220);
+  text-decoration: none;
+}
+.row a h2 {
+  width: 70px;
+}
+.row a i {
+  font-size: 17px;
+  top: 7px;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 import { cardCicle } from "../module/cards.js"
 
-const url = "http://localhost:3000/categories"
+const url = "https://app-ninja-espacial-del-espacio.herokuapp.com/categories"
 
 const getCart = async() => {
     try{

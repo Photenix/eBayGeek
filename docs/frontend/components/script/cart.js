@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded",async () =>{
         button.addEventListener("click",async () => {
             alert("Elemento eliminado")
             deletCart(id)
+            container.remove()
         })
         
         container.appendChild(button)

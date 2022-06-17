@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Aqui tengo una descripcion perrona",
+  "main": "index.js",
+  "scripts": {
+    "test": "jeje",
+    "start": "node server.js"
+  },
+  "author": "no soy el sockas",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
