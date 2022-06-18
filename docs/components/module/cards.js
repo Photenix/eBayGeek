@@ -3,6 +3,8 @@ import { postCart } from "../helpers/cartCRUD.js"
 function cardCicle(src,name, container) {
     const fragmen = document.createDocumentFragment()
 
+    const a = document.createElement("a")
+    a.href = ""
     const div = document.createElement("div")
     const img = document.createElement("img")
     const h3 = document.createElement("h3")
@@ -15,13 +17,9 @@ function cardCicle(src,name, container) {
     div.appendChild(img)
     div.appendChild(h3)
 
-    div.addEventListener("click", e => {
-        let json = {
-            src,
-            name
-        }
-        //postCart(json)
-    })
+    div.addEventListener('click', function() {
+        location.href = `./category#${name.toLowerCase()}`
+    }, false);
 
     fragmen.appendChild(div)
 
