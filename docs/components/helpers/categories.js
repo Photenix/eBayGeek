@@ -2,7 +2,7 @@ import { cardCicle } from "../module/cards.js"
 
 const url = "https://app-ninja-espacial-del-espacio.herokuapp.com/categories"
 
-const getCart = async() => {
+const getCategories = async() => {
     try{
         const data = await fetch(url)
         const json = await data.json()
@@ -13,7 +13,7 @@ const getCart = async() => {
 }
 
 const createCategory = async( container ) =>{
-    const json = await getCart()
+    const json = await getCategories()
     for (let i = 0; i < json.length; i++) {
         const { image, category } = json[i];
         cardCicle(image,category,container)
@@ -21,4 +21,4 @@ const createCategory = async( container ) =>{
 }
 
 
-export { getCart, createCategory }
+export { getCategories, createCategory }

@@ -59,7 +59,44 @@ function cardSquare(src,description,price, container,id=NaN,isCart=false) {
     div.appendChild(des)
     div.appendChild(pri)
 
-    
+    fragmen.appendChild(div)
+
+    container.appendChild(fragmen)
+}
+
+
+function cardBar(src,description,price, container,id=NaN,isCart=false) {
+    const fragmen = document.createDocumentFragment()
+
+    const div = document.createElement("div")
+    const img = document.createElement("img")
+    const des = document.createElement("p")
+    const pri = document.createElement("p")
+
+    if(id !=NaN) div.id = id
+    if(!isCart) {
+        div.className="cart-bar"
+        div.addEventListener("click", e => {
+            let json = {
+                src,
+                description,
+                price
+            }
+            postCart(json)
+        })
+    }
+    else div.className="row"
+    img.src = src
+    img.alt = "None"
+
+    des.className = "description"
+    pri.className = "money"
+    des.textContent = description
+    pri.textContent = "$"+price
+
+    div.appendChild(img)
+    div.appendChild(des)
+    div.appendChild(pri)
 
     fragmen.appendChild(div)
 
@@ -69,4 +106,5 @@ function cardSquare(src,description,price, container,id=NaN,isCart=false) {
 
 
 
-export { cardCicle, cardSquare }
+
+export { cardCicle, cardSquare, cardBar }

@@ -43,7 +43,7 @@ header img {
   justify-content: center;
   /*align-items:  center;*/
   margin-left: 8%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin-bottom: 40px;
 }
 .container .popular-products {
@@ -52,7 +52,7 @@ header img {
   margin-bottom: 32px;
 }
 .container .popular-products img {
-  height: 340px;
+  height: 380px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
   border-radius: 5%;
@@ -93,9 +93,9 @@ header img {
 .card-square {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 150px;
-  margin-right: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
   border-radius: 5%;
 }

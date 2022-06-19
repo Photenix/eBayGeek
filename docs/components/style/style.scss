@@ -49,7 +49,7 @@ header{
     justify-content: center;
     /*align-items:  center;*/
     margin-left: 8%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin-bottom: 40px;
 
     .popular-products{
@@ -57,7 +57,7 @@ header{
         flex-direction: column;
         margin-bottom: 32px;
         img{
-            height: 340px;
+            height: 380px;
             object-fit: scale-down;
             border-radius: 5%;
         }
@@ -101,9 +101,9 @@ header{
 .card-square{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 150px;
-    margin-right: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     border-radius: 5%;
 
