@@ -1,5 +1,6 @@
 import { getCategories } from "../helpers/categories.js"
 
+//requiere de un id buttons para implementarse
 const categoryButton = document.getElementById("buttons")
 
 const moduleCategoryButton = async (dirCategory ="") => {
