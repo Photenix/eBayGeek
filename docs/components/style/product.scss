@@ -1,0 +1,112 @@
+.product{
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 1000px;
+    .cd-category{
+        background-color: #fff0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    &-img{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        .main-img{
+            width: 600px;
+            height: 600px;
+            object-fit: scale-down;
+            margin-bottom: 20px;
+        }
+        .secundary-img{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            overflow: hidden;
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: scale-down;
+            }
+        }
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        .text{
+            margin-bottom: 20px;
+            h2{
+                font-size: 24px;
+                width: 400px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .money{
+                font-size: 24px;
+                color: #184A81;
+            }
+        }
+
+        .option-buy{
+            p{
+                font-size: 16px;
+                color: #03162C;
+            }
+            select{
+                width: 120px;
+                height: 50px;
+
+                /* white/1000 */
+                background: #FFFFFF;
+
+                /* neutral/250 */
+                border: 1px solid #C0C5CA;
+                border-radius: 12px;
+            }
+            .row{
+                button{
+                    width: 200px;
+                    height: 48px;
+                    border-radius: 5%;
+                }
+                .buy{
+                    background: #184A81;
+                    border: none;
+                    &:hover{
+                        background: #103053;
+                    }
+                }
+                .add{
+                    background: #FFFFFF;
+                    border: 1px solid #C0C5CA;
+                    &:hover{
+                        background: #b9b9b9;
+                    }
+                }
+            }
+        }
+
+
+        
+    }
+}
+
+.container-prs{
+    header{
+        background-color: #fff0;
+        padding: 0;
+        margin-bottom: 20px;
+        justify-content: left;
+        gap: 0;
+        button{
+            border: none;
+            height: 56px;
+            background: #ffffff00;
+        }
+    }
+}

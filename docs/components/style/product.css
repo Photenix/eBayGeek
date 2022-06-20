@@ -1,0 +1,99 @@
+.product {
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 1000px;
+}
+.product .cd-category {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  margin-bottom: 20px;
+}
+.product-img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.product-img .main-img {
+  width: 600px;
+  height: 600px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  margin-bottom: 20px;
+}
+.product-img .secundary-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+.product-img .secundary-img img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.product-info .text {
+  margin-bottom: 20px;
+}
+.product-info .text h2 {
+  font-size: 24px;
+  width: 400px;
+}
+.product-info .text p {
+  font-size: 16px;
+}
+.product-info .text .money {
+  font-size: 24px;
+  color: #184A81;
+}
+.product-info .option-buy p {
+  font-size: 16px;
+  color: #03162C;
+}
+.product-info .option-buy select {
+  width: 120px;
+  height: 50px;
+  /* white/1000 */
+  background: #FFFFFF;
+  /* neutral/250 */
+  border: 1px solid #C0C5CA;
+  border-radius: 12px;
+}
+.product-info .option-buy .row button {
+  width: 200px;
+  height: 48px;
+  border-radius: 5%;
+}
+.product-info .option-buy .row .buy {
+  background: #184A81;
+  border: none;
+}
+.product-info .option-buy .row .buy:hover {
+  background: #103053;
+}
+.product-info .option-buy .row .add {
+  background: #FFFFFF;
+  border: 1px solid #C0C5CA;
+}
+.product-info .option-buy .row .add:hover {
+  background: #b9b9b9;
+}
+
+.container-prs header {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0;
+  margin-bottom: 20px;
+  justify-content: left;
+  gap: 0;
+}
+.container-prs header button {
+  border: none;
+  height: 56px;
+  background: rgba(255, 255, 255, 0);
+}/*# sourceMappingURL=product.css.map */
