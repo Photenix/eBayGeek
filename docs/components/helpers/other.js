@@ -15,8 +15,8 @@ const getOther = async() => {
 const createRecomend = async( container ) =>{
     const json = await getOther()
     for (let i = 0; i < json.length; i++) {
-        const { image, description, price} = json[i];
-        cardSquare(image,description,price,container)
+        const { image, description, price, id} = json[i];
+        cardSquare(image,description,price,container,id)
     }
 }
 

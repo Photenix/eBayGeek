@@ -9,4 +9,7 @@ const getCategory = async(category) => {
     }
 }
 
-export { getCategory }
+const getInfoId = ( json, id ) => json.find( element => element.id == id)
+
+
+export { getCategory, getInfoId }

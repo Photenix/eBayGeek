@@ -2,7 +2,6 @@
   margin-top: 40px;
   margin-left: 5%;
   margin-right: 5%;
-  height: 1000px;
 }
 .product .cd-category {
   background-color: rgba(255, 255, 255, 0);
@@ -21,6 +20,11 @@
   -o-object-fit: scale-down;
      object-fit: scale-down;
   margin-bottom: 20px;
+  background-color: rgba(163, 163, 163, 0.315);
+  transition: 0.2s;
+}
+.product-img .main-img:hover {
+  opacity: 0.9;
 }
 .product-img .secundary-img {
   display: grid;
@@ -65,10 +69,14 @@
   border: 1px solid #C0C5CA;
   border-radius: 12px;
 }
+.product-info .option-buy .row {
+  margin-top: 20px;
+}
 .product-info .option-buy .row button {
   width: 200px;
   height: 48px;
   border-radius: 5%;
+  cursor: pointer;
 }
 .product-info .option-buy .row .buy {
   background: #184A81;

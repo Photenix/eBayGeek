@@ -24,16 +24,16 @@ const verify = () =>{
 
 const createCart = async () =>{
     const data = await getCategory(category)
-
     container.innerHTML = ""
-
     for (let i = 0; i < data.length; i++) {
         const element = data[i];
-        let {image, description, price} = element
+        let {image, description, price, id} = element
         image ="../img/5.jpeg"
-        cardSquare( image, description, price, container )
+        cardSquare( image, description, price, container, id, category,".")
     }
 }
 
-verify()
-console.log(category)
+document.addEventListener("DOMContentLoaded",()=>{
+    verify()
+})
+

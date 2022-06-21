@@ -2,7 +2,6 @@
     margin-top: 40px;
     margin-left: 5%;
     margin-right: 5%;
-    height: 1000px;
     .cd-category{
         background-color: #fff0;
         padding: 0;
@@ -19,6 +18,11 @@
             height: 600px;
             object-fit: scale-down;
             margin-bottom: 20px;
+            background-color: rgba(163, 163, 163, 0.315);
+            transition: 0.2s;
+            &:hover{
+                opacity: 0.9;
+            }
         }
         .secundary-img{
             display: grid;
@@ -69,10 +73,12 @@
                 border-radius: 12px;
             }
             .row{
+                margin-top: 20px;
                 button{
                     width: 200px;
                     height: 48px;
                     border-radius: 5%;
+                    cursor: pointer;
                 }
                 .buy{
                     background: #184A81;

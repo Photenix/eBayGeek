@@ -62,24 +62,25 @@ header{
             border-radius: 5%;
         }
     }
+}
+.shop-category{
+    overflow: hidden;
+    margin-bottom: 20px;
 
-    .shop-category{
-        overflow: hidden;
-        margin-bottom: 20px;
+    &-letter{
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
 
-        &-letter{
-            display: flex;
-            flex-direction: row;
-            margin: 20px 0;
-        }
-
-        &-image{
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
-        }
+    &-image{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
     }
 }
+
+
 
 .card-circle{
     display: flex;
@@ -107,9 +108,11 @@ header{
     margin-bottom: 20px;
     cursor: pointer;
     border-radius: 5%;
+    opacity: 1;
 
+    transition: 0.2s;
     &:hover{
-        background-color: rgba(134, 134, 134, 0.386);
+        opacity: 0.8;
     }
     img{
         width: 150px;

@@ -26,7 +26,7 @@ function cardCicle(src,name, container) {
     container.appendChild(fragmen)
 }
 
-function cardSquare(src,description,price, container,id=NaN,isCart=false) {
+function cardSquare(src,description,price, container,id=NaN,category="other", cd="") {
     const fragmen = document.createDocumentFragment()
 
     const div = document.createElement("div")
@@ -34,19 +34,21 @@ function cardSquare(src,description,price, container,id=NaN,isCart=false) {
     const des = document.createElement("p")
     const pri = document.createElement("p")
 
-    if(id !=NaN) div.id = id
-    if(!isCart) {
+    div.id = id
         div.className="card-square"
         div.addEventListener("click", e => {
+            /*
             let json = {
                 src,
                 description,
                 price
             }
             postCart(json)
-        })
-    }
-    else div.className="product"
+            */
+           if(cd == "") location.href = `./category/product#${category}-${id}`
+           else location.href = `${cd}/product#${category}-${id}`
+    })
+
     img.src = src
     img.alt = "None"
 

@@ -57,16 +57,17 @@ header img {
      object-fit: scale-down;
   border-radius: 5%;
 }
-.container .shop-category {
+
+.shop-category {
   overflow: hidden;
   margin-bottom: 20px;
 }
-.container .shop-category-letter {
+.shop-category-letter {
   display: flex;
   flex-direction: row;
   margin: 20px 0;
 }
-.container .shop-category-image {
+.shop-category-image {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -99,9 +100,11 @@ header img {
   margin-bottom: 20px;
   cursor: pointer;
   border-radius: 5%;
+  opacity: 1;
+  transition: 0.2s;
 }
 .card-square:hover {
-  background-color: rgba(134, 134, 134, 0.386);
+  opacity: 0.8;
 }
 .card-square img {
   width: 150px;
