@@ -2,45 +2,65 @@ import { postCart } from "../helpers/cartCRUD.js"
 import { createRecomend } from "../helpers/other.js"
 import { moduleCategoryButton } from "../module/categoryButton.js"
 import { getCategory, getInfoId } from "../helpers/byCategory.js"
+import { RE } from "../helpers/RE.js"
 
 const containtRecomend = document.getElementById("recomend")
 
 const imgMain = document.getElementById("main-img")
-const money = document.getElementById("money")
-const description = document.getElementById("description")
+const moneyTXT = document.getElementById("money")
+const descriptionTXT = document.getElementById("description")
 
 //init
-createRecomend(containtRecomend)
+createRecomend(containtRecomend, '../../',true)
 moduleCategoryButton("..")
 
 
 //post cart
 document.getElementById("add").addEventListener("click",()=>{
     let json = {
-        "image": reIMG(imgMain.src),
-        "description" : description.innerText,
-        "price": reMoney(money.innerText)
+        "image": RE.reIMG(imgMain.src),
+        "description" : descriptionTXT.innerText,
+        "price": RE.reMoney(moneyTXT.innerText)
     }
-    console.log(json)
-    //postCart(json)
+    //console.log(json)
+
+    Swal.fire({
+        title: 'Quiere agregarlo al carrito?',
+        text: "Esta opcion solo es digna para los uwu",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Agregar al carrito',
+        cancelButtonText: 'Cancelar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Producto en carrito',
+                showConfirmButton: false,
+                timer: 1000
+            })
+            //agregar al carrito
+            postCart(json)
+        }
+      })
 })
 
-//regular expresion
-const reIMG = ( string ) =>{
-    const re = /img\/[a-z0-9]*.[a-z]*/
-    return string.match(re)[0]
+const fillInformation = async (category, idNUm) =>{
+    const json = await getCategory( category )
+    const info = await getInfoId( json, idNUm )
+    
+    const { image, description, price, id } = info
+
+    imgMain.src = `../../${image}`
+    descriptionTXT.innerText = description
+    moneyTXT.innerText = `$${price}`
 }
 
-const reMoney = ( string ) =>{
-    const re = /\d+.\d+/
-    return string.match(re)[0]
-}
+let category = window.location.hash
 
-const fillInformation = async () =>{
-    const json = await getCategory()
-    const info = await getInfoId( json, id)
-}
+const info = RE.reHash(category)
 
-
-let category = window.location.hash.slice(1, -1)
-
+fillInformation(info[0],info[1])

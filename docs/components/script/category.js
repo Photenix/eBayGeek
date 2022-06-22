@@ -8,14 +8,14 @@ const container = document.getElementById("cart-shop")
 
 moduleCategoryButton()
 
-
 document.getElementById("buttons").addEventListener("click",e=>{
-    verify()
+    setTimeout(verify, 100);
 })
 
 //exist this category?
 const verify = () =>{
     category = window.location.hash.slice(1, -1)
+    console.log(category)
     container.innerHTML = "<h2>Cargando...</h2>"
     if(category == "art") category = "clothing";
     else { category = "other" };

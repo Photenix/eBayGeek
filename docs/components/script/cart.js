@@ -20,9 +20,29 @@ document.addEventListener("DOMContentLoaded",async () =>{
         button.className = "delet"
         button.textContent = "DELET"
         button.addEventListener("click",async () => {
-            alert("Elemento eliminado")
-            deletCart(id)
-            container.remove()
+            Swal.fire({
+                title: 'Quiere sacarlo del carrito?',
+                text: "Esta opcion solo es digna para los :v",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Sacar',
+                cancelButtonText: 'Iee'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'warning',
+                        title: 'Producto eliminado',
+                        showConfirmButton: false,
+                        timer: 1000
+                    })
+                    //accion de eliminar
+                    deletCart(id)
+                    container.remove()
+                }
+              })
         })
         
         container.appendChild(button)

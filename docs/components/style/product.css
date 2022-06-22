@@ -68,6 +68,8 @@
   /* neutral/250 */
   border: 1px solid #C0C5CA;
   border-radius: 12px;
+  text-align: center;
+  font-size: 20px;
 }
 .product-info .option-buy .row {
   margin-top: 20px;
