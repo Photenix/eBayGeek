@@ -13,12 +13,14 @@ document.addEventListener("DOMContentLoaded",async () =>{
         let {image, description, price, id} = json[i];
         const container = document.createElement("div")
         container.className = "cart-bar"
-        image = "../../img/2.jpeg"
+        image = '../../'+ image
+        
         cardBar(image,description,price,container,id,true)
 
         const button = document.createElement("button")
         button.className = "delet"
         button.textContent = "DELET"
+
         button.addEventListener("click",async () => {
             Swal.fire({
                 title: 'Quiere sacarlo del carrito?',

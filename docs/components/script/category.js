@@ -28,7 +28,7 @@ const createCart = async () =>{
     for (let i = 0; i < data.length; i++) {
         const element = data[i];
         let {image, description, price, id} = element
-        image ="../img/5.jpeg"
+        image =`../${image}`
         cardSquare( image, description, price, container, id, category,".")
     }
 }
